@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schere, Stein, Papier</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h1>Duell</h1>
+    <div id="result-container">
+        <table>
+            <tr id="title-row">
+                <td class="title">Spieler </td>
+                <td class = "versus" rowspan="3" >vs.</td>
+                <td class="title">Computer</td>
+            </tr>
+            <tr id="points-row">
+                <td id="player-points">0</td>
+                <td id="computer-points">0</td>
+            </tr>
+            
+            <tr id="choice-row">
+                <td id="player-choice"></td>
+                <td id="computer-choice"></td>
+            </tr>
+
+        </table>
+        <p id="result" class="info-text"></p>
+        <p id="start-info" class="info-text">Wähle deine Option!</p>
+    </div>
+    <div id="action-buttons"></div>
+    <button id="scissors">Schere</button>
+    <button id="rock">Stein</button>
+    <button id="paper">Papier</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
